@@ -48,9 +48,7 @@ body::-webkit-scrollbar-thumb{
     width: 100%;
 }
 
-#dark{
-    margin-top: 60px;
-}
+
 
 .nav-link{
     display: flex;
@@ -109,7 +107,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 
-.navbar:hover .logo svd{
+.navbar:hover .logo svg{
     transform: rotate(-180deg);
 }
 
@@ -154,5 +152,9 @@ body::-webkit-scrollbar-thumb{
     .navbar:hover .link-text {
         display: inline;
         transition: opacity var(--transition-speed);
+    }
+
+    #dark {
+        margin-top: 60px;
     }
 }
