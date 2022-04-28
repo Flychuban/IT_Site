@@ -6,7 +6,51 @@
     --bg-primary: #23232e;
     --bg-secondary: #141418;
     --transition-speed: 600ms;
+    --gray0: #f8f8f8;
+    --gray1: #dbe1e8;
+    --gray2: #b2becd;
+    --gray3: #6c7983;
+    --gray4: #454e56;
+    --gray5: #2a2e35;
+    --gray6: #12181b;
+    --blue: #0084a5;
+    --purple: #a82dd1;
+    --yellow: #fff565;
 }
+
+.light .navbar{
+    background-color: var(--gray1);
+}
+.light .nav-link{
+    color: black;
+    font-weight: bold;
+}
+.light .nav-link:hover{
+    filter: grayscale(0%) opacity(1);
+    color: whitesmoke;
+    background: var(--gray5);
+}
+.light .fa-primary{
+    color: var(--gray4);
+}
+.light .fa-secondary{
+    color: var(--gray6);
+}
+.light .nav-item:hover .fa-primary{
+    color: #ff7eee;
+}
+.light .nav-item:hover .fa-secondary{
+    color: #df49a6;
+}
+
+.dark .navbar{
+    background-color: #0084a5;
+}
+
+.solarized{
+
+}
+
 
 body{
     color: black;
@@ -32,7 +76,6 @@ body::-webkit-scrollbar-thumb{
 
 .navbar{
     position: fixed;
-    background-color: var(--bg-primary);
     transition: width 200ms ease;
 }
 
@@ -54,16 +97,11 @@ body::-webkit-scrollbar-thumb{
     display: flex;
     align-items: center;
     height: 5rem;
-    color: var(--text-primary);
     text-decoration: none;
     filter: grayscale(100%) opacity(0.7);
     transition: var(--transition-speed);
 }
 
-.nav-link:hover{
-    filter: grayscale(0%) opacity(1);
-    background: var(--bg-secondary);
-}
 
 .link-text{
     display: none;
@@ -74,16 +112,13 @@ body::-webkit-scrollbar-thumb{
     min-width: 2rem;
     margin: 0 1.5rem;
 }
-
-
-
-.fa-primary{
+.light .logo .fa-primary{
     color: #ff7eee;
 }
-
-.fa-secondary{
+.light .logo .fa-secondary{
     color: #df49a6;
 }
+
 
 .fa-primary, .fa-secondary{
     transition: var(--transition-speed);
@@ -94,8 +129,6 @@ body::-webkit-scrollbar-thumb{
     text-transform: uppercase;
     margin-bottom: 1rem;
     text-align: center;
-    color: var(--text-secondary);
-    background: var(--bg-secondary);
     font-size: 1.5rem;
     letter-spacing: 0.3ch;
     width: 100%;
