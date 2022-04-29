@@ -12,6 +12,13 @@
     --blue: #0084a5;
     --purple: #a82dd1;
     --yellow: #fff565;
+    --solarized0: #7703d6;
+    --solarized1: #8a02f9;
+    --solarized2: #9f29ff;
+    --solarized3: #ffcc00;
+    --solarized4: #f9dc00;
+    --solarized5: #fff702;
+    --solarized6: #fff851;
     --whitesmoke: rgb(245, 245, 245);
     --alpine: rgb(5, 27, 22);
 }
@@ -42,7 +49,14 @@
 }
 
 .solarized{
-
+    --navbg: var(--solarized6);
+    --texthov: var(--solarized6);
+    --text: var(--solarized0);
+    --itemhovpr1: var(--solarized3);
+    --itemhovpr2: var(--solarized5);
+    --item1: var(--solarized2);
+    --item2: var(--solarized0);
+    --itembg: var(--solarized1);
 }
 
 
@@ -161,6 +175,19 @@ body::-webkit-scrollbar-thumb{
     color: var(--itemhovpr2);
 }
 
+.solarized .logo:hover .fa-primary{
+    color: var(--solarized3);
+}
+.solarized .logo:hover .fa-secondary{
+    color: var(--solarized5);
+}
+.solarized .logo .fa-primary {
+    color: var(--solarized0)
+}
+
+.solarized .logo .fa-secondary {
+    color: var(--solarized2);
+}
 
 /*small screens */
 @media only screen and (max-width: 600px){
