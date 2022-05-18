@@ -14,8 +14,9 @@
   --gray5: #2a2e35;
   --gray6: #12181b;
   --blue: #0084a5;
-  --purple: #a82dd1;
+  --purple: #4d0050;
   --yellow: #fff565;
+  --solarized-1: ;
   --solarized0: #7703d6;
   --solarized1: #8a02f9;
   --solarized2: #9f29ff;
@@ -25,6 +26,9 @@
   --solarized6: #fff851;
   --whitesmoke: rgb(245, 245, 245);
   --alpine: rgb(5, 27, 22);
+  --lightpink: #ffa7f3;
+  --heavypink: #df49a6;
+  --heavyorange: #d04500;
 }
 
 .light {
@@ -54,14 +58,14 @@
 }
 
 .solarized {
-  --navbg: var(--solarized6);
-  --texthov: var(--solarized6);
-  --text: var(--solarized0);
-  --itemhovpr1: var(--solarized3);
+  --navbg: var(--lightpink);
+  --texthov: var(--lightpink);
+  --text: var(--purple);
+  --itemhovpr1: var(--heavyorange);
   --itemhovpr2: var(--solarized5);
-  --item1: var(--solarized2);
-  --item2: var(--solarized0);
-  --itembg: var(--solarized1);
+  --item1: var(--heavypink);
+  --item2: var(--purple);
+  --itembg: var(--purple);
 }
 
 * {
@@ -274,7 +278,7 @@ body::-webkit-scrollbar-thumb {
 .logo .fa-secondary {
   color: var(--itemhovpr2);
 }
-
+/*
 .solarized .logo:hover .fa-primary {
   color: var(--solarized3);
 }
@@ -288,6 +292,7 @@ body::-webkit-scrollbar-thumb {
 .solarized .logo .fa-secondary {
   color: var(--solarized2);
 }
+*/
 
 /*small screens */
 @media only screen and (max-width: 600px) {
