@@ -44,3 +44,20 @@ solarizedButton.onclick = () =>{
     }
     localStorage.setItem('theme', 'solarized');
 };
+
+let text = document.getElementById('text');
+let ufo = document.getElementById('ufo');
+let alien_par = document.getElementById('alien_par');
+let header = document.getElementById('header');
+
+window.addEventListener('scroll', function()
+{
+    let value = window.scrollY;
+
+    text.style.top = value * -0.1 + 50 + '%';
+    ufo.style.top = value * -1.5 + 'px';
+    ufo.style.left = value * 2 + 'px';
+    alien_par.style.top=value*1.75 + 'px';
+    alien_par.style.left=value*-1.5 + 'px';
+    header.style.top=value*-0.05+'px';
+});
