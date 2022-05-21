@@ -48,6 +48,7 @@ solarizedButton.onclick = () =>{
 let text = document.getElementById('text');
 let ufo = document.getElementById('ufo');
 let alien_par = document.getElementById('alien_par');
+let star = document.getElementById('falling_star');
 let header = document.getElementById('header');
 
 window.addEventListener('scroll', function()
@@ -59,5 +60,7 @@ window.addEventListener('scroll', function()
     ufo.style.left = value * 2 + 'px';
     alien_par.style.top=value*1.15 + 'px';
     alien_par.style.left=value*-1.25 + 'px';
+    star.style.top=value*-2+'px';
+    star.style.left=value*0.9+'px';
     header.style.top=value*-0.05+'px';
 });

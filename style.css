@@ -115,6 +115,19 @@ section::before {
   z-index: 10;
 }
 
+#falling_star{
+  z-index: 90;
+  margin-top: 19%;
+  margin-left: 8%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  pointer-events: none;
+}
+
 #ufo {
   margin-left: 20%;
   position: absolute;
@@ -128,7 +141,7 @@ section::before {
 }
 #alien_par {
   z-index: 99;
-  margin-left: 20%;
+  margin-left: 15%;
   position: absolute;
   top: 0;
   left: 0;
@@ -162,7 +175,7 @@ section #text span {
   letter-spacing: 2px;
   font-weight: 400;
   font-family: 'Poppins', sans-serif;
-  z-index: 110;
+  z-index: 1000;
 }
 
 .pagesec {
