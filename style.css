@@ -115,7 +115,7 @@ section::before {
   z-index: 10;
 }
 
-#falling_star{
+#falling_star {
   z-index: 90;
   margin-top: 19%;
   margin-left: 8%;
@@ -174,7 +174,7 @@ section #text span {
   font-size: 0.2em;
   letter-spacing: 2px;
   font-weight: 400;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   z-index: 1000;
 }
 
