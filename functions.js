@@ -57,7 +57,7 @@ window.addEventListener('scroll', function()
     text.style.top = value * -0.1 + 50 + '%';
     ufo.style.top = value * -1.5 + 'px';
     ufo.style.left = value * 2 + 'px';
-    alien_par.style.top=value*1.75 + 'px';
-    alien_par.style.left=value*-1.5 + 'px';
+    alien_par.style.top=value*1.15 + 'px';
+    alien_par.style.left=value*-1.25 + 'px';
     header.style.top=value*-0.05+'px';
 });
