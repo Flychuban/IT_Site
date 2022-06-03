@@ -128,8 +128,9 @@ section {
 
 #falling_star {
   z-index: 1;
-  margin-top: 19%;
-  margin-left: 8%;
+  /* margin-top: 19%; */
+  /* margin-left: 8%; */
+  transform: translate(8vw, 40vh);
   position: absolute;
   top: 0;
   left: 0;
@@ -141,8 +142,9 @@ section {
 
 #station {
   z-index: 2;
-  margin-top: 10%;
-  margin-left: 35%;
+  /* margin-top: 10%; */
+  /* margin-left: 35%; */
+  transform: translate(38vw, 15vh);
   position: absolute;
   top: 0;
   left: 0;
@@ -154,8 +156,9 @@ section {
 
 #satelit {
   z-index: 1;
-  margin-top: 3%;
-  margin-left: 15%;
+  /* margin-top: 3%; */
+  /* margin-left: 15%; */
+  transform: translate(15vw, 8vh);
   position: absolute;
   top: 0;
   left: 0;
@@ -167,8 +170,9 @@ section {
 
 #shuttle_nasa {
   z-index: 3;
-  margin-top: 18%;
-  margin-left: 62%;
+  /* margin-top: 18%; */
+  /* margin-left: 62%; */
+  transform: translate(65vw, 40vh);
   position: absolute;
   top: 0;
   left: 0;
@@ -179,7 +183,8 @@ section {
 }
 
 #ufo {
-  margin-left: 20%;
+  /* margin-left: 20%; */
+  transform: translate(30vw, 0vh);
   position: absolute;
   top: 0;
   left: 0;
@@ -191,7 +196,8 @@ section {
 }
 #alien_par {
   z-index: 2;
-  margin-left: 15%;
+  /* margin-left: 15%; */
+  transform: translate(15vw,0vh);
   position: absolute;
   top: 0;
   left: 0;
