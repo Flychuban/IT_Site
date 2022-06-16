@@ -44,6 +44,10 @@
   --itembg: var(--gray5);
 }
 
+h1, h2 {
+  color: white;
+}
+
 .dark {
   --navbg: var(--gray6);
   --texthov: var(--alpine);
@@ -126,6 +130,17 @@ section {
   z-index: 1000;
 }
 
+.planets_section::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 5rem;
+  width: 100%;
+  height: 15vh;
+  background: linear-gradient(to top, #23546c, transparent);
+  z-index: 1000;
+}
+
 #falling_star {
   z-index: 1;
   /* margin-top: 19%; */
@@ -177,6 +192,42 @@ section {
   top: 0;
   left: 0;
   width: auto;
+  height: auto;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+#saturn {
+  z-index: 3;
+  transform: translate(68vw, 50vh);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+#neptune {
+  z-index: 3;
+  transform: translate(55vw, 7vh);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: auto;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+#jupiter {
+  z-index: 3;
+  transform: translate(12vw, 50vh);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
   height: auto;
   object-fit: cover;
   pointer-events: none;
@@ -264,6 +315,23 @@ section #text span {
 .shuttles_info p {
   font-size: 1em;
   color: var(--gray0);
+}
+
+.planets_info {
+  position: relative;
+  padding: 10vh 12vw;
+  background:#23546c;
+  column-count: 2; 
+  column-gap: 7%;
+}
+.planets_info h2 {
+  font-size: 3.5em;
+  color:white;
+  margin-bottom: 10px;
+}
+.planets_info p {
+  font-size: 1em;
+  color: white;
 }
 
 body::-webkit-scrollbar {
