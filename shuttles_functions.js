@@ -49,7 +49,7 @@ let text = document.getElementById('text');
 let header = document.getElementById('header');
 let shuttle_nasa = document.getElementById('shuttle_nasa');
 let satelit = document.getElementById('satelit');
-//let station = document.getElementById('station');
+let station = document.getElementById('station');
 
 
 window.addEventListener('scroll', function()
@@ -58,10 +58,10 @@ window.addEventListener('scroll', function()
   
    text.style.top = value * -0.1 + 50 + '%';
    header.style.top= value * -0.05 + 'px'; 
-   //station.style.top = value * -1.25 + 'px';
-   //station.style.left = value * 0.5 + 'px';
-   shuttle_nasa.style.top = value * -3 + 'px';
+   station.style.top = value * -1 + 'px';
+   station.style.left = value * 0.5 + 'px';
+   shuttle_nasa.style.top = value * -2 + 'px';
    shuttle_nasa.style.left = value * 1.5 + 'px';
    satelit.style.top = value * 0.75 + 'px';
-   satelit.style.left = value * -1.25 + 'px';
+   satelit.style.left = value * -0.95 + 'px';
 });
