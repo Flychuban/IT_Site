@@ -195,7 +195,7 @@ section {
 
 #saturn {
   z-index: 3;
-  transform: translate(68vw, 50vh);
+  transform: translate(65vw, 35vh);
   position: absolute;
   top: 0;
   left: 0;
@@ -207,7 +207,7 @@ section {
 
 #mars {
   z-index: 3;
-  transform: translate(15vw, 7vh);
+  transform: translate(12vw, 50vh);
   position: absolute;
   top: 0;
   left: 0;
@@ -219,7 +219,7 @@ section {
 
 #jupiter {
   z-index: 3;
-  transform: translate(12vw, 50vh);
+  transform: translate(25vw, 9vh);
   position: absolute;
   top: 0;
   left: 0;
